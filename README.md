@@ -46,4 +46,22 @@
 
 `nano /etc/network/interfaces`
 
+Редактируем его содержимое, чтобы оно выглядело как-то так:
+
+```
+source /etc/network/interfaces.d/*
+auto lo
+iface lo inet loopback
+
+allow-hotplug enp0s3
+iface enp0s3 inet dhcp
+
+allow-hotplug enp0s8
+iface enp0s8 inet static
+address 10.3.0.1
+netmask 255.255.255.0
+network 10.3.0.0
+broadcast 10.3.0.255
+```
+
 
