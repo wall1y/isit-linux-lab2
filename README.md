@@ -8,6 +8,7 @@
 ![image](https://user-images.githubusercontent.com/65608414/102971455-3fb21100-451b-11eb-889b-dc1ed0423122.png)
 
 Адаптер2, он будет у нас локальным интерфейсом:
+
 Имя сети можно ввести любое. 
 
 ![image](https://user-images.githubusercontent.com/65608414/102971610-7daf3500-451b-11eb-9401-fc9b91d4d033.png)
