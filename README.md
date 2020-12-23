@@ -105,12 +105,23 @@ broadcast 10.3.0.255
 https://github.com/wall1y/isit-linux-lab2/blob/main/dhcpd.conf
 
 Ключевой момент вот здесь:
+
+Закомментируем эту строку
+`#option domain-name "example.org";`
+
+Изменяем эту:
+`option domain-name-servers 8.8.8.8, 8.8.4.4;`
+
+Закомментируем эту:
+`#ddns-update-style none;`
+
+Изменяем  вот этот блок:
 ```
 subnet 10.3.0.0 netmask 255.255.255.0 {
   range 10.3.0.10 10.3.0.250;
   option domain-name-servers 8.8.8.8;
   option routers 10.3.0.1;
-  option broadcast-address 10.3.0.254;
+  option broadcast-address 10.3.0.255;
   default-lease-time 600;
   max-lease-time 7200;
 }
