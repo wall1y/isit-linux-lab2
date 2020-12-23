@@ -84,6 +84,13 @@ broadcast 10.3.0.255
 
 ![image](https://user-images.githubusercontent.com/65608414/102983722-544bd480-452e-11eb-8929-bc9754d122f5.png)
 
+После редактирования файла конфигурации сетевых интерфейсов запускаем второй интерфейс:
+
+`ifup enp0s8`
+
+и перезапускаем сеть:
+`service networking restart`
+
 После настройки интерфейса устанавливаем DHCP-сервер:
 
  `apt install isc-dhcp-server`
